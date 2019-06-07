@@ -28,3 +28,13 @@ C:\Users\Leon\Desktop\Nst-Extractor\NST_Extractor\obj\Debug\NST_Extractor.csproj
 C:\Users\Leon\Desktop\Nst-Extractor\NST_Extractor\obj\Debug\NST_Extractor.csproj.CoreCompileInputs.cache
 C:\Users\Leon\Desktop\Nst-Extractor\NST_Extractor\obj\Debug\NST_Extractor v1.1.exe
 C:\Users\Leon\Desktop\Nst-Extractor\NST_Extractor\obj\Debug\NST_Extractor v1.1.pdb
+C:\Users\Leon\Documents\GitHub\Nst-Extractor\NST_Extractor\bin\Debug\NST_Extractor v1.1.exe.config
+C:\Users\Leon\Documents\GitHub\Nst-Extractor\NST_Extractor\bin\Debug\NST_Extractor v1.1.exe
+C:\Users\Leon\Documents\GitHub\Nst-Extractor\NST_Extractor\bin\Debug\NST_Extractor v1.1.pdb
+C:\Users\Leon\Documents\GitHub\Nst-Extractor\NST_Extractor\obj\Debug\NST_Extractor.csprojAssemblyReference.cache
+C:\Users\Leon\Documents\GitHub\Nst-Extractor\NST_Extractor\obj\Debug\NST_Extractor.NST_Extractor.resources
+C:\Users\Leon\Documents\GitHub\Nst-Extractor\NST_Extractor\obj\Debug\NST_Extractor.Properties.Resources.resources
+C:\Users\Leon\Documents\GitHub\Nst-Extractor\NST_Extractor\obj\Debug\NST_Extractor.csproj.GenerateResource.cache
+C:\Users\Leon\Documents\GitHub\Nst-Extractor\NST_Extractor\obj\Debug\NST_Extractor.csproj.CoreCompileInputs.cache
+C:\Users\Leon\Documents\GitHub\Nst-Extractor\NST_Extractor\obj\Debug\NST_Extractor v1.1.exe
+C:\Users\Leon\Documents\GitHub\Nst-Extractor\NST_Extractor\obj\Debug\NST_Extractor v1.1.pdb

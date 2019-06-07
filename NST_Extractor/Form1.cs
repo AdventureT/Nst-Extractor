@@ -37,12 +37,13 @@ namespace NST_Extractor
             else
             {
                 FileStream fs = new FileStream(_path, FileMode.Open, FileAccess.Read);
-                if (fs.Length == 96)
+                if (fs.Length == 80)
                 {
                     MessageBox.Show($"The File ({fs.Length} Bytes) is too small!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     fs.Close();
                     return;
                 }
+                System.IO.File.Copy(_path, _path + ".bak");
                 fs.Close();
                 iga = new IGA(_path);
                 iga.Repack(_path + ".old", progressBar1);
@@ -56,7 +57,7 @@ namespace NST_Extractor
         {
             byte[] fileBytes = System.IO.File.ReadAllBytes(_path);
             BinaryWriter bw = new BinaryWriter(new FileStream(_path, FileMode.Create));
-            for (int i = 0; i < 96; i++)
+            for (int i = 0; i < 80; i++)
             {
                 bw.Write(fileBytes[i]);
             }
@@ -77,5 +78,27 @@ namespace NST_Extractor
             quick.Start();
             quick.WaitForExit();
         }
+        /* Extracts Everything
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            string outputFolder = _path;
+            outputFolder = outputFolder.Remove(outputFolder.LastIndexOf("\\"));
+            string[] allFiles = Directory.GetFiles(outputFolder);
+            for (int i = 0; i < allFiles.Length; i++)
+            {
+                FileStream fs = new FileStream(allFiles[i], FileMode.Open, FileAccess.Read);
+                if (!allFiles[i].EndsWith(".old") && fs.Length > 96)
+                {
+                    iga = new IGA(_path);
+                    iga.Repack(allFiles[i] + ".old", progressBar1);
+                    ReduceFile();
+                    QuickBMS();
+                    MessageBox.Show("Extracting Successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    progressBar1.Value = 0;
+                }
+                fs.Close();
+            }
+        }
+        */
     }
 }
